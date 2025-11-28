@@ -1,0 +1,152 @@
+.card_services_servicios {
+    width: 405px;
+    height: 330px;
+    border-radius: 20px;
+    padding: 25px;
+    border-top: 1px solid #313131;
+    border-left: 1px solid #313131;
+    border-right: 5px solid #313131;
+    border-bottom: 5px solid #313131;
+    margin-top: 60px;
+}
+
+.numero_services {
+    border-radius: 100px;
+    background-color: #ffffff08;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.numero_services p {
+    color: #00C5FB;
+    font-size: 26px;
+    position: relative;
+    transition: color 0.5s ease;
+    z-index: 3;
+    margin: 0;
+}
+
+/* Efecto de llenado desde abajo */
+.numero_services:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        270deg,
+        rgba(0, 197, 251, 1) 0%,
+        rgba(30, 100, 186, 1) 100%
+    );
+    transition: 0.5s ease;
+    z-index: 2;
+    border-radius: 100px;
+}
+
+/* Hover: el fondo sube y el texto cambia color */
+.numero_services:hover:before {
+    top: 0;
+}
+
+.numero_services:hover p {
+    color: #313131;
+}
+
+/* Variante: Efecto desde la izquierda */
+.numero_services.slide-left:before {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+}
+
+.numero_services.slide-left:hover:before {
+    left: 0;
+}
+
+/* Variante: Efecto desde el centro (escala) */
+.numero_services.scale-center:before {
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+}
+
+.numero_services.scale-center:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+/* Variante: Efecto de rotación del fondo */
+.numero_services.rotate:before {
+    top: 0;
+    left: 0;
+    transform: rotate(180deg) scale(0);
+    transform-origin: center;
+}
+
+.numero_services.rotate:hover:before {
+    transform: rotate(0deg) scale(1);
+}
+
+/* Efecto adicional: Solo cambio de color sin rotación */
+.numero_services.simple:hover p {
+    color: #313131;
+}
+
+/* Efecto adicional: Pulso combinado sin rotación */
+.numero_services.pulse-fill:hover {
+    transform: scale(1.1);
+}
+
+.numero_services.pulse-fill:hover p {
+    color: #313131;
+}
+
+.text_services {
+    margin-top: 30px;
+}
+
+.text_services h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.text_services p {
+    margin-top: 20px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+@media (max-width: 768px) {
+    .numero_services {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .numero_services p {
+        font-size: 22px;
+    }
+    
+    .numero_services:hover p {
+        color: #313131; /* Solo cambio de color en móvil */
+    }
+}
+
+@media (max-width: 425px) {
+    
+}

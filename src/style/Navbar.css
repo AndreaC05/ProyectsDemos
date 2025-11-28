@@ -1,0 +1,70 @@
+.navbar_principal {
+    justify-content: space-between;
+}
+
+.Logo_mikrotik {
+    margin-left: 80px;
+}
+
+.contactos {
+    position: relative;
+}
+
+.numeros_contactos {
+    position: absolute;
+    top: 0;
+}
+
+.numeros {
+    /* border: 1px solid black; */
+    width: 630px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.numeros p {
+    color: white;
+    font-size: 20px;
+}
+
+.numeros p:nth-child(3) {
+    margin-left: 50px;
+}
+
+.numeros p:nth-child(4) {
+    margin-left: 50px;
+}
+
+.numeros i {
+    color: white;
+    margin-right: 20px;
+}
+
+/* Estilos para el botón del menú de contactos */
+.hamburger_menu {
+  display: none;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  background: #00c5fb;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(24, 118, 242, 0.514);
+}
+
+.hamburger_menu:hover {
+  background: #166fe5;
+  transform: scale(1.05);
+}
+
+.hamburger_menu i {
+  transition: transform 0.3s ease;
+}
+

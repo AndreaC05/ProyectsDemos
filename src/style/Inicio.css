@@ -1,0 +1,277 @@
+.video_mikrotik {
+  margin-top: -11px;
+  position: relative;
+}
+
+.torn-edge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* height: 120px; */
+  z-index: 10;
+}
+
+.torn-edge img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.body_mikrotik {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_caracteristicas {
+  margin-top: 60px;
+}
+
+.text_caracteristicas {
+  text-align: center;
+}
+
+.section_caracteristicas .text_caracteristicas h3,
+.body_sobre_nosotros h3,
+.servicios .text_servicios h3 {
+  color: #00c5fb;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section_caracteristicas .text_caracteristicas h2,
+.body_sobre_nosotros h2,
+.text_servicios h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.cards {
+  margin-top: 95px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1392px;
+  gap: 20px;
+}
+
+.buton_leer_mas {
+  margin-top: 40px;
+}
+
+.buton_leer_mas Button {
+  background: linear-gradient(
+    270deg,
+    rgba(0, 197, 251, 1) 0%,
+    rgba(30, 100, 186, 1) 100%
+  );
+  border: none;
+  padding: 10px 40px;
+  border-radius: 40px;
+  font-weight: 700;
+  letter-spacing: 0.32px;
+  animation: pulse-button 2s infinite;
+  transition: all 0.3s ease;
+}
+
+@keyframes pulse-button {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 197, 251, 0.7);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 10px rgba(0, 197, 251, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(0, 197, 251, 0);
+  }
+}
+
+.sobre_nosotros {
+  position: relative;
+  width: 1392px;
+}
+
+.sobre_nosotros .img_degradado {
+  margin-top: -180px;
+}
+
+.style_puntos {
+  position: absolute;
+  top: 130px;
+  left: 800px;
+}
+
+.floating-style {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.body_sobre_nosotros {
+  position: absolute;
+  top: 200px;
+  justify-content: space-between;
+}
+
+.sobre_nosotros_izquierdo p {
+  font-size: 18px;
+  line-height: 35px;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  width: 657px;
+}
+
+.identidad_mikrotik {
+  margin-top: 30px;
+  border: 1px solid;
+  border-radius: 20px;
+  width: 510px;
+  height: 294px;
+  box-shadow: 4px 4px 4px black;
+  padding: 25px;
+  background-color: white;
+}
+
+.identidad_mikrotik h4 {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.identidad {
+  align-items: center;
+  margin-top: 20px;
+}
+
+.identidad i {
+  color: #1e64ba;
+}
+
+.identidad p {
+  margin-top: 0;
+  margin-left: 7px;
+}
+
+.images_sobre_nosotros {
+  margin-top: 30px;
+  position: relative;
+}
+
+.images_sobre_nosotros img:nth-child(1) {
+  margin-left: 300px;
+}
+
+.images_sobre_nosotros img:nth-child(2) {
+  margin-top: -180px;
+  margin-left: 100px;
+}
+
+.letter_experiencia {
+  position: absolute;
+  width: 349px;
+  height: 62px;
+  top: 460px;
+  left: 350px;
+  border: 1px solid;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 4px 4px 4px black;
+  align-items: center;
+  justify-content: center;
+}
+
+.letter_experiencia p:nth-child(1) {
+  font-size: 30px;
+  color: #1e64ba;
+  font-weight: 600;
+}
+
+.letter_experiencia p:nth-child(2) {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+/* Estilos para el contador animado */
+.counter-number {
+  font-size: 30px !important;
+  color: #1e64ba !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover para el contador */
+.letter_experiencia:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de pulso cuando el contador está animando */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.counter-animating {
+  animation: pulse 0.5s ease-in-out;
+}
+
+.servicios {
+  background-color: #1A1A1A;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.text_servicios h2 {
+  width: 967px;
+  color: white;
+}
+
+.card_services {
+  margin-top: 20px;
+  width: 1392px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.footer {
+  margin-top: 130px;
+  width: 100%;
+  /* background-color: #1A1A1A; */
+  /* height: 555px; */
+  border-top: 1px solid hsla(0, 0%, 0%, 0.25);
+}

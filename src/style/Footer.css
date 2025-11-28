@@ -1,0 +1,181 @@
+.fondo_footer {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.fondo_footer img {
+  margin-top: -60px;
+}
+
+.logo_mikrotik_footer {
+  position: absolute;
+  margin-top: 14px;
+  margin-right: 720px;
+}
+
+.dos_partes_footer {
+  justify-content: space-around;
+  /* border: 1px solid black; */
+}
+
+.lado_izquierdo {
+  margin-top: 60px;
+  /* border: 1px solid black; */
+}
+
+.lado_izquierdo h2 {
+  font-weight: bold;
+  font-size: 40px;
+  width: 518px;
+}
+
+.button_footer_leermas {
+  margin-bottom: 50px;
+}
+
+.lado_derecho {
+  margin-top: 60px;
+  width: 50%;
+  justify-content: space-around;
+  /* border: 1px solid black; */
+}
+
+.link h3,
+.contacto h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.link ul {
+  margin-top: 20px;
+}
+
+.link ul li {
+  list-style: none;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.contacto {
+  /* margin-left: 250px; */
+}
+
+.redes_sociales {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fff;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.social-icon .icon {
+  position: relative;
+  color: #262626;
+  transition: all 0.5s ease;
+  z-index: 3;
+}
+
+.social-icon:hover .icon {
+  color: #fff;
+}
+
+/* Efecto de llenado desde abajo */
+.social-icon:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.social-icon:hover:before {
+  top: 0;
+}
+
+/* Colores específicos para cada red social */
+.social-icon.facebook:before {
+  background: #1877f2;
+}
+
+.social-icon.tiktok:before {
+  background: #000000;
+}
+
+.social-icon.whatsapp:before {
+  background: #25d366;
+}
+
+/* Efecto hover adicional - ligero crecimiento */
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Efecto de click */
+.social-icon:active {
+  transform: scale(0.95);
+}
+
+/* Animación de entrada opcional */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.redes_sociales .social-icon {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.redes_sociales .social-icon:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.redes_sociales .social-icon:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.redes_sociales .social-icon:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Efecto de pulso sutil en hover */
+.social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.copyright {
+  border-top: 1px solid hsla(0, 0%, 0%, 0.25);
+  /* margin-top: 30px; */
+  text-align: center;
+}
+
+.copyright p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}

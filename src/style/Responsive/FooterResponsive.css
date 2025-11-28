@@ -1,0 +1,77 @@
+@media (max-width: 1024px) {
+    .dos_partes_footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lado_derecho {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .fondo_footer {
+        margin-top: 20px;
+    }
+    .fondo_degradado_footer {
+        width: 500px;
+    }
+
+    .logo_mikrotik_footer {
+        margin-right: 370px;
+        margin-top: -20px;
+    }
+
+    .logo_mikrotik_footer img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 425px) {
+    .lado_izquierdo {
+        margin-top: 0;
+    }
+
+    .lado_izquierdo h2 {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .lado_derecho {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .link h3 {
+        font-size: 18px;
+    }
+
+    .contacto {
+        margin-top: 40px;
+    }
+
+    .contacto h3 {
+        font-size: 18px;
+    }
+
+    .fondo_degradado_footer {
+        display: none;
+    }
+
+    .logo_mikrotik_footer {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .contacto {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

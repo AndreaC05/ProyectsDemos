@@ -1,0 +1,40 @@
+.cards_caracteristicas {
+  border-radius: 20px;
+  border: 1px solid;
+  width: 300px;
+  height: 449px;
+  box-shadow: 4px 4px 4px black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards_caracteristicas img {
+  border-radius: 20px;
+}
+
+.text_card {
+  text-align: center;
+}
+
+.text_card h3 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.text_card p {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .text_card h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cards_caracteristicas img {
+    width: 200px;
+  }
+}

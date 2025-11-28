@@ -1,0 +1,86 @@
+.custom-cursor,
+.cursor-dot,
+.cursor-follower {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.1s ease;
+}
+
+/* Cursor principal */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #b4adad;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(2px);
+  background: rgba(170, 170, 170, 0.1);
+  transition: all 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Punto central */
+.cursor-dot {
+  width: 4px;
+  height: 4px;
+  background: #b4b4b4;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Seguidor */
+.cursor-follower {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(116, 116, 116, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(170, 170, 170, 0.05);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Estados hover */
+.custom-cursor.hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  background: rgba(209, 209, 209, 0.2);
+  border-color: rgba(209, 209, 209, 0.8);
+}
+
+.cursor-follower.hover {
+  transform: translate(-50%, -50%) scale(2);
+  border-color: rgba(197, 197, 197, 0.6);
+  background: rgba(189, 189, 189, 0.1);
+}
+
+/* Estado clicking */
+.custom-cursor.clicking {
+  transform: translate(-50%, -50%) scale(0.8);
+  background: rgba(172, 172, 172, 0.4);
+}
+
+/* Ocultar cursor por defecto */
+body {
+  cursor: none;
+}
+
+/* En móviles mostrar cursor normal */
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+  
+  .custom-cursor,
+  .cursor-dot,
+  .cursor-follower {
+    display: none;
+  }
+}
+
+/* Variantes de cursor */
+.custom-cursor.glow {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.cursor-follower.glow {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
