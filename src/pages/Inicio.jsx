@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import CardCaracteristica from "../components/CardCaracteristica";
-import CardServices from "../components/CardServices";
+import { useState, useEffect, useRef } from "react";
+import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
+import CardCaracteristica from "../components/CardCaracteristica.jsx";
+import CardServices from "../components/CardServices.jsx";
 import Video from "../assets/Video/VIDEO.mp4";
 import HojaRoto from "../assets/hoja.png";
 import Degradado from "../assets/degradado.svg";
