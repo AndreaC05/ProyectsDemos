@@ -14,8 +14,8 @@ import Enfoque from "../assets/Caracteristicas/feature2.jpg";
 import Pensamiento from "../assets/Caracteristicas/feature3.jpg";
 import Equipo from "../assets/Caracteristicas/feature4.jpg";
 import { Button } from "primereact/button";
-import Imagen1 from "../assets/SobreNosotros/Image1.png";
-import Imagen2 from "../assets/SobreNosotros/Image2.png";
+import Imagen1 from "../assets/SobreNosotros/Imagen1.png";
+import Imagen2 from "../assets/SobreNosotros/Imagen2.png";
 
 export default function Inicio() {
   const [counter, setCounter] = useState(0);

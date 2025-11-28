@@ -1,4 +1,4 @@
-import "../Style/CardServices.css";
+import "../style/CardServices.css";
 
 export default function CardServices({ numero, titulo, descripcion}) {
     return(

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Logo from "../assets/Logo.svg";
 import Fondo from "../assets/fondo_navbar.svg";
-import "../Style/Navbar.css";
-import "../Style/Responsive/NavbarResponsive.css";
+import "../style/Navbar.css";
+import "../style/Responsive/NavbarResponsive.css";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

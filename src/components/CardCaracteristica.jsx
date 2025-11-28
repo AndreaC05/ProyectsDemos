@@ -1,4 +1,4 @@
-import "../Style/CardCaracteristicas.css";
+import "../style/CardCaracteristicas.css";
 
 const CardCaracteristica = ({ imagen, titulo, descripcion, altText = "" }) => {
   return (

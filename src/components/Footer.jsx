@@ -1,5 +1,5 @@
-import "../Style/Footer.css";
-import "../Style/Responsive/FooterResponsive.css";
+import "../style/Footer.css";
+import "../style/Responsive/FooterResponsive.css";
 import Fondo from "../assets/fondo_footer.svg";
 import Logo from "../assets/Logo_blanco.svg";
 import { Button } from "primereact/button";
