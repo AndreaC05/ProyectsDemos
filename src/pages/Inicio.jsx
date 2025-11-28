@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import CardCaracteristica from "../Components/CardCaracteristica";
-import CardServices from "../Components/CardServices";
+import CardCaracteristica from "../components/CardCaracteristica";
+import CardServices from "../components/CardServices";
 import Video from "../assets/Video/VIDEO.mp4";
 import HojaRoto from "../assets/hoja.png";
 import Degradado from "../assets/degradado.svg";
