@@ -20,9 +20,9 @@ export default function Footer() {
   // Enlaces de redes sociales
   const handleSocialClick = (platform) => {
     const links = {
-      facebook: 'https://www.facebook.com/share/16naSRAmb6/', // Cambia por tu página real
-      tiktok: 'https://www.tiktok.com/@mikrotikperu?is_from_webapp=1&sender_device=pc', // Cambia por tu cuenta real
-      whatsapp: 'https://wa.me/51999046598' // Cambia por tu número real
+      facebook: 'https://www.facebook.com/devpathdesarrolloweb', // Cambia por tu página real
+      tiktok: '#', // Cambia por tu cuenta real
+      whatsapp: '#' // Cambia por tu número real
     };
     
     window.open(links[platform], '_blank');
@@ -41,7 +41,7 @@ export default function Footer() {
           <div className="lado_izquierdo">
             <h2>Conectate con nosotros para empezar a trabajar juntos!</h2>
             <div className="buton_leer_mas button_footer_leermas">
-              <a href="https://mikrotikperu.com.pe/" target="_blank">
+              <a href="#" target="_blank">
                 <Button>Leer más</Button>
               </a>
             </div>
@@ -65,15 +65,15 @@ export default function Footer() {
                 <h3>Ponte en Contacto</h3>
                 <div className="location mt-4 flex">
                     <i className="pi pi-map-marker"></i>
-                    <p className="ml-2">Dirección: Av. Circunvalacion 2432, San Luis</p>
+                    <p className="ml-2">Dirección: Av. Cualquera 123, San Luis</p>
                 </div>
                 <div className="email mt-4 flex">
                     <i className="pi pi-envelope"></i>
-                    <p className="ml-2">Correo: cmorales@mikrotikperu.com.pe</p>
+                    <p className="ml-2">Correo: aguirreandrea457@gmail.com</p>
                 </div>
                 <div className="phone mt-4 flex">
                     <i className="pi pi-phone"></i>
-                    <p className="ml-2">Teléfono: (01) 640-8018</p>
+                    <p className="ml-2">Teléfono: (01) 680-8000</p>
                 </div>
 
                 <div className="redes_sociales">
@@ -100,7 +100,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="copyright">
-          <p>Copyright © 2014 by MikrotikPerú All Right Reserved</p>
+          <p>Copyright © 2025 by ACeleste All Right Reserved</p>
         </div>
       </div>
     </>

@@ -10,8 +10,12 @@
 
 .logo_mikrotik_footer {
   position: absolute;
-  margin-top: 14px;
+  margin-top: 10px;
   margin-right: 720px;
+}
+
+.logo_mikrotik_footer img {
+  width: 200px;
 }
 
 .dos_partes_footer {

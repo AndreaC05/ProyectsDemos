@@ -31,9 +31,9 @@ export default function Navbar() {
           <div className="numeros_contactos">
             <div className="flex numeros">
               <i className="pi pi-phone"></i>
-              <p>(01) 640-8018</p>
-              <p>0800 801 41</p>
-              <p>999 046 598</p>
+              <p>(01) 680-8000</p>
+              <p>0800 810 50</p>
+              <p>950 874 416</p>
             </div>
           </div>
         </div>

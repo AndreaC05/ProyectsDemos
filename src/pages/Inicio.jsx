@@ -3,28 +3,25 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import CardCaracteristica from "../Components/CardCaracteristica";
 import CardServices from "../Components/CardServices";
-import Video from "../assets/Video/VIDEO_MIKROTIK.mp4";
+import Video from "../assets/Video/VIDEO.mp4";
 import HojaRoto from "../assets/hoja.png";
 import Degradado from "../assets/degradado.svg";
 import style from "../assets/style.svg";
 import "../Style/Inicio.css";
 import "../Style/Responsive/InicioResponsive.css";
-// import "../Style/BotonFlotanteChat.css";
 import Alta from "../assets/Caracteristicas/feature1.jpg";
 import Enfoque from "../assets/Caracteristicas/feature2.jpg";
 import Pensamiento from "../assets/Caracteristicas/feature3.jpg";
 import Equipo from "../assets/Caracteristicas/feature4.jpg";
 import { Button } from "primereact/button";
-import Imagen1 from "../assets/SobreNosotros/Image1.png";
-import Imagen2 from "../assets/SobreNosotros/Image2.png";
-// import BotonFlotanteChat from "../Components/BotonFlotanteChat";
+import Imagen1 from "../assets/SobreNosotros/Imagen1.png";
+import Imagen2 from "../assets/SobreNosotros/Imagen2.png";
 
 export default function Inicio() {
   const [counter, setCounter] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
   const counterRef = useRef(null);
 
-  // Hook para observar cuando la sección entra en viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -49,12 +46,11 @@ export default function Inicio() {
     };
   }, [hasAnimated]);
 
-  // Función para animar el contador
   const animateCounter = () => {
     let start = 0;
-    const end = 11;
-    const duration = 2000; // 2 segundos
-    const increment = end / (duration / 50); // 50ms intervals
+    const end = 8;
+    const duration = 2000;
+    const increment = end / (duration / 50);
 
     const timer = setInterval(() => {
       start += increment;
@@ -83,36 +79,35 @@ export default function Inicio() {
           </div>
         </div>
         <div className="body_mikrotik">
-          {/* Agregamos ID a la sección de características */}
           <section className="section_caracteristicas" id="caracteristicas">
             <div className="text_caracteristicas">
               <h3>NUESTRAS CARACTERÍSTICAS</h3>
-              <h2>Conexión ágil y sencilla para todos</h2>
+              <h2>Desarrollo web profesional a tu medida</h2>
             </div>
             <div className="cards">
               <CardCaracteristica
                 imagen={Alta}
-                titulo="Alta Calidad"
-                descripcion="Ofrecemos un servicio confiable y de excelencia."
+                titulo="Diseño Moderno"
+                descripcion="Sitios web atractivos y funcionales con las últimas tendencias."
               />
               <CardCaracteristica
                 imagen={Enfoque}
-                titulo="Enfoque en las personas"
-                descripcion="Tu conexión y satisfacción son nuestra prioridad."
+                titulo="Enfoque en resultados"
+                descripcion="Tu éxito digital es nuestra máxima prioridad."
               />
               <CardCaracteristica
                 imagen={Pensamiento}
-                titulo="Pensamiento Innovador"
-                descripcion="Soluciones creativas para un mundo conectado."
+                titulo="Soluciones Innovadoras"
+                descripcion="Tecnología de vanguardia para impulsar tu negocio."
               />
               <CardCaracteristica
                 imagen={Equipo}
-                titulo="Equipo Experto"
-                descripcion="Profesionales listos para brindarte la mejor atención."
+                titulo="Equipo Especializado"
+                descripcion="Desarrolladores expertos comprometidos con tu proyecto."
               />
             </div>
           </section>
-          {/* Agregamos ID a la sección sobre nosotros */}
+          
           <section className="sobre_nosotros" id="sobre-nosotros">
             <img src={Degradado} alt="" className="img_degradado" />
             <div className="style_puntos floating-style">
@@ -121,37 +116,38 @@ export default function Inicio() {
             <div className="body_sobre_nosotros flex">
               <div className="sobre_nosotros_izquierdo">
                 <h3>SOBRE NOSOTROS</h3>
-                <h2>Tu aliado en conectividad y tecnología</h2>
+                <h2>Tu socio en desarrollo web y transformación digital</h2>
                 <p className="text_nosotros">
-                  Conectamos al Perú con internet rápido y soluciones
-                  tecnológicas seguras, impulsando la productividad y la
-                  innovación en todo el país.
+                  Creamos experiencias digitales excepcionales que impulsan el 
+                  crecimiento de tu negocio. Desarrollamos sitios web modernos, 
+                  aplicaciones web y soluciones e-commerce que conectan tu marca 
+                  con tus clientes.
                 </p>
                 <div className="seccion_identidad">
                   <div className="identidad_mikrotik">
-                    <h4>Identidad MikrotikPerú</h4>
+                    <h4>Nuestra Propuesta de Valor</h4>
                     <div className="list_identidad">
                       <div className="identidad flex">
                         <i className="pi pi-check-circle"></i>
-                        <p>Estrategia de marca y posicionamiento</p>
+                        <p>Diseño UI/UX centrado en el usuario</p>
                       </div>
                       <div className="identidad flex">
                         <i className="pi pi-check-circle"></i>
-                        <p>Desarrollo de identidad corporativa</p>
+                        <p>Desarrollo responsive y optimizado</p>
                       </div>
                       <div className="identidad flex">
                         <i className="pi pi-check-circle"></i>
-                        <p>Imagen visual y comunicación</p>
+                        <p>SEO y estrategia de contenidos</p>
                       </div>
                       <div className="identidad flex">
                         <i className="pi pi-check-circle"></i>
-                        <p>Estrategia comercial y de marketing</p>
+                        <p>Soporte y mantenimiento continuo</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="buton_leer_mas">
-                  <a href="https://mikrotikperu.com.pe/" target="_blank">
+                  <a href="#" target="_blank">
                     <Button>Leer más</Button>
                   </a>
                 </div>
@@ -168,40 +164,39 @@ export default function Inicio() {
               </div>
             </div>
           </section>
-          {/* Agregamos ID a la sección de servicios */}
+          
           <section className="servicios" id="servicios">
             <div className="text_servicios">
               <h3>NUESTROS SERVICIOS</h3>
               <h2>
-                Descubra nuestros destacados servicios de conectividad y
-                tecnología
+                Soluciones web completas para llevar tu negocio al siguiente nivel
               </h2>
             </div>
             <div className="card_services">
               <CardServices
                 numero="1"
-                titulo="Fibra Óptica"
-                descripcion="La fibra óptica hacia la comunicación del futuro. Con su capacidad bidireccional a través de filamentos TX y RX, desata una red de posibilidades sin igual."
+                titulo="Páginas Web Corporativas"
+                descripcion="Sitios web profesionales que reflejan la identidad de tu marca. Diseño responsive, optimizado para SEO y con la mejor experiencia de usuario."
               />
               <CardServices
                 numero="2"
-                titulo="Satelitales"
-                descripcion="Conéctate sin límites con nuestro Internet Satelital: velocidad y confiabilidad para llevar tu negocio o entretenimiento a nuevas alturas."
+                titulo="Tiendas Online (E-commerce)"
+                descripcion="Plataformas de venta online completas con carrito de compras, pasarelas de pago y gestión de inventario para hacer crecer tu negocio."
               />
               <CardServices
                 numero="3"
-                titulo="Servicios VPN"
-                descripcion="Navega seguro y sin restricciones con nuestro servicio VPN: Protege tus datos mientras exploras la web, con acceso a contenido global."
+                titulo="Aplicaciones Web"
+                descripcion="Desarrollamos aplicaciones web personalizadas con tecnologías modernas como React, Node.js y bases de datos en la nube."
               />
               <CardServices
                 numero="4"
-                titulo="Contingencia de WAN'S"
-                descripcion="Proteja la vitalidad de su empresa frente a interrupciones de conexión con nuestro servicio de Contingencia."
+                titulo="Landing Pages"
+                descripcion="Páginas de aterrizaje optimizadas para conversión, perfectas para campañas de marketing digital y captación de clientes."
               />
               <CardServices
                 numero="5"
-                titulo="Plataforma Gestión WI-FI"
-                descripcion="Conoce lo último en Gestión Wi-Fi con nuestra Plataforma. Su Empresa gestionará los acceso de clientes a la red Wi-Fi de manera masiva."
+                titulo="Mantenimiento y Soporte"
+                descripcion="Actualizaciones, mejoras continuas y soporte técnico para mantener tu sitio web seguro, rápido y funcionando perfectamente."
               />
             </div>
           </section>
@@ -210,7 +205,6 @@ export default function Inicio() {
       <div className="footer">
         <Footer />
       </div>
-      {/* <BotonFlotanteChat /> */}
     </>
   );
 }
