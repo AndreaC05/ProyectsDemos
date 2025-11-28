@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import CardCaracteristica from "../Components/CardCaracteristica";
 import CardServices from "../Components/CardServices";
 import Video from "../assets/Video/VIDEO.mp4";
@@ -14,13 +14,30 @@ import Enfoque from "../assets/Caracteristicas/feature2.jpg";
 import Pensamiento from "../assets/Caracteristicas/feature3.jpg";
 import Equipo from "../assets/Caracteristicas/feature4.jpg";
 import { Button } from "primereact/button";
-import Imagen1 from "../assets/SobreNosotros/Imagen1.png";
-import Imagen2 from "../assets/SobreNosotros/Imagen2.png";
+import Imagen1 from "../assets/SobreNosotros/Image1.png";
+import Imagen2 from "../assets/SobreNosotros/Image2.png";
 
 export default function Inicio() {
   const [counter, setCounter] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
   const counterRef = useRef(null);
+
+  const animateCounter = () => {
+    let start = 0;
+    const end = 8;
+    const duration = 2000;
+    const increment = end / (duration / 50);
+
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        setCounter(end);
+        clearInterval(timer);
+      } else {
+        setCounter(Math.floor(start));
+      }
+    }, 50);
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,23 +62,6 @@ export default function Inicio() {
       }
     };
   }, [hasAnimated]);
-
-  const animateCounter = () => {
-    let start = 0;
-    const end = 8;
-    const duration = 2000;
-    const increment = end / (duration / 50);
-
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= end) {
-        setCounter(end);
-        clearInterval(timer);
-      } else {
-        setCounter(Math.floor(start));
-      }
-    }, 50);
-  };
 
   return (
     <>
